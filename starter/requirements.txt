@@ -1,8 +1,20 @@
+# Build tools (important for Render)
+setuptools>=65.0.0
+wheel>=0.38.0
+
+# Core libraries
 numpy
 pandas
+
+# ML libraries (must match training version)
 scikit-learn==1.1.1
-pytest
-requests
+joblib
+
+# API framework
 fastapi==0.63.0
 uvicorn
 gunicorn
+
+# Testing and requests
+pytest
+requests
