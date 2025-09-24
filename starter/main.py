@@ -6,6 +6,7 @@ from ml.model import load_artifacts, inference
 from ml.data import process_data
 
 
+
 app = FastAPI(
     title="Census Income Prediction API",
     description="Predict whether a person earns >50K or <=50K based on census data.",
