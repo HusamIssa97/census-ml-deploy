@@ -1,19 +1,16 @@
-# main.py
-from fastapi import FastAPI
-from pydantic import BaseModel, Field
-import pandas as pd
-# main.py (top)
 from fastapi import FastAPI
 from pydantic import BaseModel, Field
 import pandas as pd
 
+# ✅ Handle imports correctly in both local and Render environments
 try:
     from starter.ml.model import load_artifacts, inference
     from starter.ml.data import process_data
 except ModuleNotFoundError:
     from ml.model import load_artifacts, inference
     from ml.data import process_data
-    
+
+
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
