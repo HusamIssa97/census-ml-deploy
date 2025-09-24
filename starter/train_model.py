@@ -10,10 +10,10 @@ from sklearn.model_selection import train_test_split
 from ml.data import process_data
 from ml.model import train_model, inference, compute_model_metrics, save_artifacts
 
-
-DATA_PATH = "data/census.csv"   # make sure the file is here
-ARTIFACT_DIR = "model"
-SLICE_FILE = "slice_output.txt"
+BASE_DIR = Path(__file__).resolve().parent
+DATA_PATH = BASE_DIR / "data" / "census.csv"   # was "data/census.csv"
+ARTIFACT_DIR = BASE_DIR / "model"              # was "model"
+SLICE_FILE = BASE_DIR / "slice_output.txt"     # was "slice_output.txt"
 
 CAT_FEATURES: List[str] = [
     "workclass",

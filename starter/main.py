@@ -4,6 +4,11 @@ from pydantic import BaseModel, Field
 import pandas as pd
 from ml.model import load_artifacts, inference
 from ml.data import process_data
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+ARTIFACT_DIR = BASE_DIR / "model"
+
 
 app = FastAPI(
     title="Census Income Prediction API",
@@ -12,7 +17,7 @@ app = FastAPI(
 )
 
 # Load model and encoders at startup
-model, encoder, lb = load_artifacts("model")
+model, encoder, lb = load_artifacts(str(ARTIFACT_DIR))
 
 
 # Pydantic model for POST body

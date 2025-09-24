@@ -27,6 +27,10 @@ jobs:
 
     - name: Run Flake8
       run: flake8 starter/
+    - name: Train model
+      env:
+        PYTHONPATH: starter
+      run: python starter/train_model.py
 
     - name: Run Pytest
       env:
