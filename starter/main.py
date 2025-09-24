@@ -1,7 +1,6 @@
 # main.py
 from fastapi import FastAPI
 from pydantic import BaseModel, Field
-from typing import Literal
 
 import pandas as pd
 from ml.model import load_artifacts, inference

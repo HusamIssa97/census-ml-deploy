@@ -11,9 +11,6 @@ from ml.data import process_data
 from ml.model import train_model, inference, compute_model_metrics, save_artifacts
 
 
-
-
-
 DATA_PATH = "data/census.csv"   # make sure the file is here
 ARTIFACT_DIR = "model"
 SLICE_FILE = "slice_output.txt"
