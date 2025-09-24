@@ -1,0 +1,16 @@
+education == '10th' -> precision: 0.4286, recall: 0.2419, f1: 0.3093, n=933
+education == '11th' -> precision: 0.5714, recall: 0.4000, f1: 0.4706, n=1175
+education == '12th' -> precision: 0.5000, recall: 0.2121, f1: 0.2979, n=433
+education == '1st-4th' -> precision: 0.3333, recall: 0.1667, f1: 0.2222, n=168
+education == '5th-6th' -> precision: 0.3125, recall: 0.3125, f1: 0.3125, n=333
+education == '7th-8th' -> precision: 0.2593, recall: 0.1750, f1: 0.2090, n=646
+education == '9th' -> precision: 0.2727, recall: 0.1111, f1: 0.1579, n=514
+education == 'Assoc-acdm' -> precision: 0.7083, recall: 0.2566, f1: 0.3767, n=1067
+education == 'Assoc-voc' -> precision: 0.6565, recall: 0.2382, f1: 0.3496, n=1382
+education == 'Bachelors' -> precision: 0.8253, recall: 0.2787, f1: 0.4167, n=5355
+education == 'Doctorate' -> precision: 0.9592, recall: 0.3072, f1: 0.4653, n=413
+education == 'HS-grad' -> precision: 0.5617, recall: 0.2119, f1: 0.3078, n=10501
+education == 'Masters' -> precision: 0.8735, recall: 0.3097, f1: 0.4573, n=1723
+education == 'Preschool' -> precision: 0.0000, recall: 1.0000, f1: 0.0000, n=51
+education == 'Prof-school' -> precision: 0.9607, recall: 0.4043, f1: 0.5691, n=576
+education == 'Some-college' -> precision: 0.6141, recall: 0.2192, f1: 0.3231, n=7291
