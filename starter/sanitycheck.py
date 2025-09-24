@@ -1,9 +1,9 @@
 from os import path
-
 import argparse
 import importlib
 import inspect
 import sys
+
 
 FAIL_COLOR = '\033[91m'
 OK_COLOR = '\033[92m'
