@@ -12,8 +12,6 @@ try:
 except ModuleNotFoundError:
     from ml.model import load_artifacts, inference
     from ml.data import process_data
-from ml.model import load_artifacts, inference
-from ml.data import process_data
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
