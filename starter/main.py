@@ -5,8 +5,6 @@ import pandas as pd
 from ml.model import load_artifacts, inference
 from ml.data import process_data
 
-
-
 app = FastAPI(
     title="Census Income Prediction API",
     description="Predict whether a person earns >50K or <=50K based on census data.",
@@ -15,6 +13,7 @@ app = FastAPI(
 
 # Load model and encoders at startup
 model, encoder, lb = load_artifacts("model")
+
 
 # Pydantic model for POST body
 class CensusInput(BaseModel):
