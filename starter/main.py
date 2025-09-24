@@ -2,6 +2,16 @@
 from fastapi import FastAPI
 from pydantic import BaseModel, Field
 import pandas as pd
+# main.py (top)
+from fastapi import FastAPI
+from pydantic import BaseModel, Field
+import pandas as pd
+try:
+    from starter.ml.model import load_artifacts, inference
+    from starter.ml.data import process_data
+except ModuleNotFoundError:
+    from ml.model import load_artifacts, inference
+    from ml.data import process_data
 from ml.model import load_artifacts, inference
 from ml.data import process_data
 from pathlib import Path
