@@ -1,6 +1,5 @@
 # live_test.py
 import json
-import sys
 import traceback
 from typing import Dict
 
